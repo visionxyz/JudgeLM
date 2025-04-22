@@ -134,7 +134,7 @@ class Conversation:
                 ret[-1][-1] = msg
         return ret
 
-    def copy(self, answer_num):
+    def copy(self, answer_num = None):
         if answer_num is not None:
             prompt = self.prompt\
                 .replace("two", num2words[int(answer_num)])\
